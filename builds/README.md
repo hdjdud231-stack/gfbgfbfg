@@ -10,7 +10,14 @@
 - مجلد `index_web/` - يحتوي على جميع ملفات الويب
 - يمكن رفعه مباشرة على Netlify أو أي استضافة ويب
 
-### 3. تطبيق التلفزيون (LG WebOS)
+### 3. تطبيق iOS
+- **متطلبات البناء**: macOS + Xcode + Flutter
+- **دليل البناء الكامل**: `IOS_BUILD_GUIDE.md`
+- **دليل البناء السريع**: `QUICK_IOS_BUILD.md`
+- **سكريبت البناء التلقائي**: `build_ios.sh`
+- **ملفات الإعداد**: ExportOptions.plist (App Store، Development، Ad Hoc)
+
+### 4. تطبيق التلفزيون (LG WebOS)
 - `index_webos_1.0.0.ipk` - ملف التثبيت للتلفزيون
 
 ## طريقة تثبيت تطبيق WebOS على تلفزيون LG:
@@ -56,10 +63,41 @@ ares-install index_webos_1.0.0.ipk --device [اسم_التلفزيون]
 - تحليلات Amplitude مدمجة
 - السيرفر الافتراضي: SuperEmbed
 
+## طريقة بناء تطبيق iOS:
+
+### البناء السريع:
+```bash
+# تشغيل السكريبت التلقائي
+./build_ios.sh
+```
+
+### البناء اليدوي:
+```bash
+# تنظيف وتحديث المشروع
+flutter clean && flutter pub get
+
+# تثبيت CocoaPods
+cd ios && pod install && cd ..
+
+# البناء
+flutter build ios --release
+
+# إنشاء الأرشيف (في Xcode)
+# Product → Archive → Distribute App
+```
+
+### متطلبات iOS:
+- macOS (Big Sur 11.0 أو أحدث)
+- Xcode (13.0 أو أحدث)
+- Flutter SDK (3.24.5 أو أحدث)
+- CocoaPods (1.11.0 أو أحدث)
+- شهادة Apple Developer (للتثبيت على الأجهزة)
+
 ## ملاحظات مهمة:
 - تأكد من اتصال الإنترنت لعمل جميع الميزات
 - قد تحتاج لتغيير السيرفر من الإعدادات إذا لم تعمل بعض المحتويات
 - التطبيق يدعم اللغة العربية بالكامل
+- **بناء iOS يتطلب macOS ولا يمكن بناؤه على Windows أو Linux**
 
 ## الدعم الفني:
 للحصول على الدعم الفني، يرجى التواصل مع فريق Voxin.
