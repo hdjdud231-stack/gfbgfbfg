@@ -1,0 +1,42 @@
+{
+  "id": "com.voxin.index",
+  "version": "1.0.0",
+  "vendor": "Voxin",
+  "type": "web",
+  "main": "index.html",
+  "title": "Index",
+  "icon": "icon.png",
+  "largeIcon": "large_icon.png",
+  "splashBackground": "splash_background.png",
+  "bgImage": "bg_image.png",
+  "iconColor": "#AB261D",
+  "category": "Entertainment",
+  "requiredPermissions": [
+    "network.operation",
+    "media.operation",
+    "audio.operation",
+    "video.operation"
+  ],
+  "supportedResolutions": [
+    "1920x1080",
+    "3840x2160"
+  ],
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": true,
+  "handlesRelaunch": true,
+  "transparent": false,
+  "accessibility": {
+    "supportsAudioGuidance": false,
+    "supportsPointingDevices": true
+  },
+  "mediaCapability": {
+    "video": {
+      "codec": ["h264", "h265", "vp9"],
+      "container": ["mp4", "mkv", "webm"]
+    },
+    "audio": {
+      "codec": ["aac", "mp3", "opus"],
+      "container": ["mp4", "mp3", "webm"]
+    }
+  }
+}

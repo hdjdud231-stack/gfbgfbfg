@@ -1,0 +1,31 @@
+<variant
+    name="release"
+    package="com.amplitude.amplitude_flutter"
+    minSdkVersion="16"
+    targetSdkVersion="16"
+    mergedManifest="/workspace/project/index app/build/amplitude_flutter/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml"
+    proguardFiles="/workspace/project/index app/build/amplitude_flutter/intermediates/default_proguard_files/global/proguard-android.txt-8.12.0"
+    partialResultsDir="/workspace/project/index app/build/amplitude_flutter/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out"
+    desugaredMethodsFiles="/root/.gradle/caches/8.14/transforms/9c87aa7ad4a343602d6b3de36171b861/transformed/D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/main/kotlin:src/release/java:src/release/kotlin"
+        resDirectories="src/main/res:src/release/res"
+        assetsDirectories="src/main/assets:src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="/workspace/project/index app/build/amplitude_flutter/intermediates/javac/release/compileReleaseJavaWithJavac/classes:/workspace/project/index app/build/amplitude_flutter/tmp/kotlin-classes/release:/workspace/project/index app/build/amplitude_flutter/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar"
+      type="MAIN"
+      applicationId="com.amplitude.amplitude_flutter"
+      generatedSourceFolders="/workspace/project/index app/build/amplitude_flutter/generated/ap_generated_sources/release/out"
+      generatedResourceFolders="/workspace/project/index app/build/amplitude_flutter/generated/res/resValues/release"
+      desugaredMethodsFiles="/root/.gradle/caches/8.14/transforms/9c87aa7ad4a343602d6b3de36171b861/transformed/D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

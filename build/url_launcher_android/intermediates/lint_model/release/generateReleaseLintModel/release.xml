@@ -1,0 +1,31 @@
+<variant
+    name="release"
+    package="io.flutter.plugins.urllauncher"
+    minSdkVersion="19"
+    targetSdkVersion="19"
+    mergedManifest="/workspace/project/index app/build/url_launcher_android/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml"
+    manifestMergeReport="/workspace/project/index app/build/url_launcher_android/outputs/logs/manifest-merger-release-report.txt"
+    proguardFiles="/workspace/project/index app/build/url_launcher_android/intermediates/default_proguard_files/global/proguard-android.txt-8.12.0"
+    partialResultsDir="/workspace/project/index app/build/url_launcher_android/intermediates/lint_partial_results/release/lintAnalyzeRelease/out">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/release/java:src/main/kotlin:src/release/kotlin"
+        resDirectories="src/main/res:src/release/res"
+        assetsDirectories="src/main/assets:src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="/workspace/project/index app/build/url_launcher_android/intermediates/javac/release/compileReleaseJavaWithJavac/classes:/workspace/project/index app/build/url_launcher_android/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar"
+      type="MAIN"
+      applicationId="io.flutter.plugins.urllauncher"
+      generatedSourceFolders="/workspace/project/index app/build/url_launcher_android/generated/ap_generated_sources/release/out:/workspace/project/index app/build/url_launcher_android/generated/source/buildConfig/release"
+      generatedResourceFolders="/workspace/project/index app/build/url_launcher_android/generated/res/resValues/release"
+      desugaredMethodsFiles="/root/.gradle/caches/8.14/transforms/0d89b9ee54980b43c628c7c51a23651b/transformed/D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

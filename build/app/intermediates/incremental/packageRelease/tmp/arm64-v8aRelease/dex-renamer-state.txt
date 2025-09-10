@@ -1,0 +1,10 @@
+#Wed Sep 10 20:27:17 UTC 2025
+base.2=/workspace/project/index app/build/app/intermediates/dex/release/mergeDexRelease/classes2.dex
+path.2=classes2.dex
+base.1=/workspace/project/index app/build/app/intermediates/global_synthetics_dex/release/mergeReleaseGlobalSynthetics/classes.dex
+path.1=classes.dex
+base.0=/workspace/project/index app/build/app/intermediates/dex/release/mergeDexRelease/classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

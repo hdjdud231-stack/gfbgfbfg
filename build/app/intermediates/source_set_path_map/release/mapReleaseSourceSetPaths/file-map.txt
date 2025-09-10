@@ -1,0 +1,57 @@
+com.mosesmbaga.semo.app-core-1.13.1-0 /root/.gradle/caches/8.14/transforms/0521ef38c43db74fa3c9bf065fd8e7a8/transformed/core-1.13.1/res
+com.mosesmbaga.semo.app-jetified-datastore-preferences-release-1 /root/.gradle/caches/8.14/transforms/148383ba3af02e82f2ac9b9504d46574/transformed/jetified-datastore-preferences-release/res
+com.mosesmbaga.semo.app-jetified-core-ktx-1.13.1-2 /root/.gradle/caches/8.14/transforms/22e524fc75bf82dbc9e7c9625010154f/transformed/jetified-core-ktx-1.13.1/res
+com.mosesmbaga.semo.app-jetified-android-sdk-2.39.8-3 /root/.gradle/caches/8.14/transforms/263f5d585660250ada7b8d245c24f987/transformed/jetified-android-sdk-2.39.8/res
+com.mosesmbaga.semo.app-webkit-1.12.1-4 /root/.gradle/caches/8.14/transforms/2bee3be4cd377c53c28cb7f96b8261bb/transformed/webkit-1.12.1/res
+com.mosesmbaga.semo.app-recyclerview-1.0.0-5 /root/.gradle/caches/8.14/transforms/2bfb2ba846bcb96db9b0726329a9c585/transformed/recyclerview-1.0.0/res
+com.mosesmbaga.semo.app-jetified-window-java-1.2.0-6 /root/.gradle/caches/8.14/transforms/356e27b1dbd58a3cded6f311a9bf52c0/transformed/jetified-window-java-1.2.0/res
+com.mosesmbaga.semo.app-jetified-lifecycle-livedata-core-ktx-2.7.0-7 /root/.gradle/caches/8.14/transforms/3eb138f3b678af6d8911a5ceba7e3768/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/res
+com.mosesmbaga.semo.app-fragment-1.7.1-8 /root/.gradle/caches/8.14/transforms/40ef1dacca5b537f75368616e574d56b/transformed/fragment-1.7.1/res
+com.mosesmbaga.semo.app-lifecycle-livedata-core-2.7.0-9 /root/.gradle/caches/8.14/transforms/507a30c75de15285d8f774cb29231606/transformed/lifecycle-livedata-core-2.7.0/res
+com.mosesmbaga.semo.app-jetified-savedstate-ktx-1.2.1-10 /root/.gradle/caches/8.14/transforms/52c530ec490b48a5aca4f4718536fe32/transformed/jetified-savedstate-ktx-1.2.1/res
+com.mosesmbaga.semo.app-jetified-datastore-core-release-11 /root/.gradle/caches/8.14/transforms/5a137cf5a1d20d0143d7c06258cf61d2/transformed/jetified-datastore-core-release/res
+com.mosesmbaga.semo.app-jetified-tracing-1.2.0-12 /root/.gradle/caches/8.14/transforms/5e53284209c52d9d0b97cb3b0e2ea933/transformed/jetified-tracing-1.2.0/res
+com.mosesmbaga.semo.app-jetified-lifecycle-runtime-ktx-2.7.0-13 /root/.gradle/caches/8.14/transforms/64e997dedc9798f05f79bed53148f749/transformed/jetified-lifecycle-runtime-ktx-2.7.0/res
+com.mosesmbaga.semo.app-jetified-annotation-experimental-1.4.1-14 /root/.gradle/caches/8.14/transforms/775133ca81e98e6baa2a61cc112ea0b3/transformed/jetified-annotation-experimental-1.4.1/res
+com.mosesmbaga.semo.app-jetified-activity-ktx-1.8.1-15 /root/.gradle/caches/8.14/transforms/7942fcbe8c80898787acfe49afe549f1/transformed/jetified-activity-ktx-1.8.1/res
+com.mosesmbaga.semo.app-jetified-window-1.2.0-16 /root/.gradle/caches/8.14/transforms/82cd0e9bafe0dfa35d29a68f1e42c5d3/transformed/jetified-window-1.2.0/res
+com.mosesmbaga.semo.app-transition-1.4.1-17 /root/.gradle/caches/8.14/transforms/85de4c83156c0f439a819a5e4034aeac/transformed/transition-1.4.1/res
+com.mosesmbaga.semo.app-browser-1.8.0-18 /root/.gradle/caches/8.14/transforms/85f10e3bb083e0efc972878d28632571/transformed/browser-1.8.0/res
+com.mosesmbaga.semo.app-jetified-startup-runtime-1.1.1-19 /root/.gradle/caches/8.14/transforms/863984ba9779ad475eda7fc5f3eb049b/transformed/jetified-startup-runtime-1.1.1/res
+com.mosesmbaga.semo.app-lifecycle-livedata-2.7.0-20 /root/.gradle/caches/8.14/transforms/8a066fc42063dc73942898475ce71183/transformed/lifecycle-livedata-2.7.0/res
+com.mosesmbaga.semo.app-appcompat-1.1.0-21 /root/.gradle/caches/8.14/transforms/8bb4dfb094ed4564ed26c85b80bbcab5/transformed/appcompat-1.1.0/res
+com.mosesmbaga.semo.app-lifecycle-viewmodel-2.7.0-22 /root/.gradle/caches/8.14/transforms/8e293e803f75cca3de469dfd80c2a863/transformed/lifecycle-viewmodel-2.7.0/res
+com.mosesmbaga.semo.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-23 /root/.gradle/caches/8.14/transforms/90219c3ed443e1c74b8b2c00cc2f8a90/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/res
+com.mosesmbaga.semo.app-jetified-media3-exoplayer-1.4.1-24 /root/.gradle/caches/8.14/transforms/91fe42d9b4ce174c66df600562f0b3c3/transformed/jetified-media3-exoplayer-1.4.1/res
+com.mosesmbaga.semo.app-jetified-datastore-release-25 /root/.gradle/caches/8.14/transforms/9549080986e6e5660922812e0bc23df9/transformed/jetified-datastore-release/res
+com.mosesmbaga.semo.app-jetified-appcompat-resources-1.1.0-26 /root/.gradle/caches/8.14/transforms/95dc5b607bb410978e608dde93100ac1/transformed/jetified-appcompat-resources-1.1.0/res
+com.mosesmbaga.semo.app-slidingpanelayout-1.2.0-27 /root/.gradle/caches/8.14/transforms/992db608f7a2c550232e2293738a38c3/transformed/slidingpanelayout-1.2.0/res
+com.mosesmbaga.semo.app-jetified-activity-1.8.1-28 /root/.gradle/caches/8.14/transforms/a0ff444ff700a735bcaf229b3c2acb87/transformed/jetified-activity-1.8.1/res
+com.mosesmbaga.semo.app-jetified-core-1.0.0-29 /root/.gradle/caches/8.14/transforms/a8f1c14e51efc03a45cad5fd5aaea25e/transformed/jetified-core-1.0.0/res
+com.mosesmbaga.semo.app-jetified-profileinstaller-1.3.1-30 /root/.gradle/caches/8.14/transforms/af6ec410a370eb54d67476a711f75fb9/transformed/jetified-profileinstaller-1.3.1/res
+com.mosesmbaga.semo.app-jetified-lifecycle-viewmodel-ktx-2.7.0-31 /root/.gradle/caches/8.14/transforms/bb26facbbe95316ab43a0d2f06d64551/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/res
+com.mosesmbaga.semo.app-jetified-savedstate-1.2.1-32 /root/.gradle/caches/8.14/transforms/c3ddb9deb696abe130455f77f10e2895/transformed/jetified-savedstate-1.2.1/res
+com.mosesmbaga.semo.app-coordinatorlayout-1.0.0-33 /root/.gradle/caches/8.14/transforms/e14482e1c4b95fa15d150a16a853bfed/transformed/coordinatorlayout-1.0.0/res
+com.mosesmbaga.semo.app-jetified-lifecycle-process-2.7.0-34 /root/.gradle/caches/8.14/transforms/e78f8512ae06c17f040c2ab6f3cf4306/transformed/jetified-lifecycle-process-2.7.0/res
+com.mosesmbaga.semo.app-jetified-fragment-ktx-1.7.1-35 /root/.gradle/caches/8.14/transforms/e95eadbc8d115647c9f0ad828b4b3f35/transformed/jetified-fragment-ktx-1.7.1/res
+com.mosesmbaga.semo.app-lifecycle-runtime-2.7.0-36 /root/.gradle/caches/8.14/transforms/ebe7c2a02f26ca32451ce0e4e5590bdc/transformed/lifecycle-runtime-2.7.0/res
+com.mosesmbaga.semo.app-preference-1.2.1-37 /root/.gradle/caches/8.14/transforms/ec21c6124c4689ba54fc446c36d19184/transformed/preference-1.2.1/res
+com.mosesmbaga.semo.app-core-runtime-2.2.0-38 /root/.gradle/caches/8.14/transforms/ed610391eb66bb666ceac474225efefe/transformed/core-runtime-2.2.0/res
+com.mosesmbaga.semo.app-main-39 /workspace/project/index app/android/app/src/main/res
+com.mosesmbaga.semo.app-release-40 /workspace/project/index app/android/app/src/release/res
+com.mosesmbaga.semo.app-release-41 /workspace/project/index app/build/amplitude_flutter/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-pngs-42 /workspace/project/index app/build/app/generated/res/pngs/release
+com.mosesmbaga.semo.app-resValues-43 /workspace/project/index app/build/app/generated/res/resValues/release
+com.mosesmbaga.semo.app-packageReleaseResources-44 /workspace/project/index app/build/app/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.mosesmbaga.semo.app-packageReleaseResources-45 /workspace/project/index app/build/app/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.mosesmbaga.semo.app-release-46 /workspace/project/index app/build/app/intermediates/merged_res/release/mergeReleaseResources
+com.mosesmbaga.semo.app-release-47 /workspace/project/index app/build/connectivity_plus/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-48 /workspace/project/index app/build/flutter_native_splash/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-49 /workspace/project/index app/build/package_info_plus/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-50 /workspace/project/index app/build/path_provider_android/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-51 /workspace/project/index app/build/shared_preferences_android/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-52 /workspace/project/index app/build/sqflite_android/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-53 /workspace/project/index app/build/url_launcher_android/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-54 /workspace/project/index app/build/video_player_android/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-55 /workspace/project/index app/build/wakelock_plus/intermediates/packaged_res/release/packageReleaseResources
+com.mosesmbaga.semo.app-release-56 /workspace/project/index app/build/webview_flutter_android/intermediates/packaged_res/release/packageReleaseResources

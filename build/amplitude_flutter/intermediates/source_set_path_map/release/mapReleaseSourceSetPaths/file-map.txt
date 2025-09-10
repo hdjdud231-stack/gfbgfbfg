@@ -1,0 +1,28 @@
+com.amplitude.amplitude_flutter-core-1.13.1-0 /root/.gradle/caches/8.14/transforms/0521ef38c43db74fa3c9bf065fd8e7a8/transformed/core-1.13.1/res
+com.amplitude.amplitude_flutter-jetified-core-ktx-1.13.1-1 /root/.gradle/caches/8.14/transforms/22e524fc75bf82dbc9e7c9625010154f/transformed/jetified-core-ktx-1.13.1/res
+com.amplitude.amplitude_flutter-jetified-android-sdk-2.39.8-2 /root/.gradle/caches/8.14/transforms/263f5d585660250ada7b8d245c24f987/transformed/jetified-android-sdk-2.39.8/res
+com.amplitude.amplitude_flutter-jetified-window-java-1.2.0-3 /root/.gradle/caches/8.14/transforms/356e27b1dbd58a3cded6f311a9bf52c0/transformed/jetified-window-java-1.2.0/res
+com.amplitude.amplitude_flutter-jetified-lifecycle-livedata-core-ktx-2.7.0-4 /root/.gradle/caches/8.14/transforms/3eb138f3b678af6d8911a5ceba7e3768/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/res
+com.amplitude.amplitude_flutter-fragment-1.7.1-5 /root/.gradle/caches/8.14/transforms/40ef1dacca5b537f75368616e574d56b/transformed/fragment-1.7.1/res
+com.amplitude.amplitude_flutter-lifecycle-livedata-core-2.7.0-6 /root/.gradle/caches/8.14/transforms/507a30c75de15285d8f774cb29231606/transformed/lifecycle-livedata-core-2.7.0/res
+com.amplitude.amplitude_flutter-jetified-tracing-1.2.0-7 /root/.gradle/caches/8.14/transforms/5e53284209c52d9d0b97cb3b0e2ea933/transformed/jetified-tracing-1.2.0/res
+com.amplitude.amplitude_flutter-jetified-window-1.2.0-8 /root/.gradle/caches/8.14/transforms/82cd0e9bafe0dfa35d29a68f1e42c5d3/transformed/jetified-window-1.2.0/res
+com.amplitude.amplitude_flutter-jetified-startup-runtime-1.1.1-9 /root/.gradle/caches/8.14/transforms/863984ba9779ad475eda7fc5f3eb049b/transformed/jetified-startup-runtime-1.1.1/res
+com.amplitude.amplitude_flutter-lifecycle-livedata-2.7.0-10 /root/.gradle/caches/8.14/transforms/8a066fc42063dc73942898475ce71183/transformed/lifecycle-livedata-2.7.0/res
+com.amplitude.amplitude_flutter-lifecycle-viewmodel-2.7.0-11 /root/.gradle/caches/8.14/transforms/8e293e803f75cca3de469dfd80c2a863/transformed/lifecycle-viewmodel-2.7.0/res
+com.amplitude.amplitude_flutter-jetified-lifecycle-viewmodel-savedstate-2.7.0-12 /root/.gradle/caches/8.14/transforms/90219c3ed443e1c74b8b2c00cc2f8a90/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/res
+com.amplitude.amplitude_flutter-jetified-activity-1.8.1-13 /root/.gradle/caches/8.14/transforms/a0ff444ff700a735bcaf229b3c2acb87/transformed/jetified-activity-1.8.1/res
+com.amplitude.amplitude_flutter-jetified-core-1.0.0-14 /root/.gradle/caches/8.14/transforms/a8f1c14e51efc03a45cad5fd5aaea25e/transformed/jetified-core-1.0.0/res
+com.amplitude.amplitude_flutter-jetified-profileinstaller-1.3.1-15 /root/.gradle/caches/8.14/transforms/af6ec410a370eb54d67476a711f75fb9/transformed/jetified-profileinstaller-1.3.1/res
+com.amplitude.amplitude_flutter-jetified-savedstate-1.2.1-16 /root/.gradle/caches/8.14/transforms/c3ddb9deb696abe130455f77f10e2895/transformed/jetified-savedstate-1.2.1/res
+com.amplitude.amplitude_flutter-jetified-annotation-experimental-1.4.0-17 /root/.gradle/caches/8.14/transforms/e0ef35bf31e418c50a6b0bbd056ea89c/transformed/jetified-annotation-experimental-1.4.0/res
+com.amplitude.amplitude_flutter-jetified-lifecycle-process-2.7.0-18 /root/.gradle/caches/8.14/transforms/e78f8512ae06c17f040c2ab6f3cf4306/transformed/jetified-lifecycle-process-2.7.0/res
+com.amplitude.amplitude_flutter-lifecycle-runtime-2.7.0-19 /root/.gradle/caches/8.14/transforms/ebe7c2a02f26ca32451ce0e4e5590bdc/transformed/lifecycle-runtime-2.7.0/res
+com.amplitude.amplitude_flutter-core-runtime-2.2.0-20 /root/.gradle/caches/8.14/transforms/ed610391eb66bb666ceac474225efefe/transformed/core-runtime-2.2.0/res
+com.amplitude.amplitude_flutter-main-21 /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/res
+com.amplitude.amplitude_flutter-release-22 /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/release/res
+com.amplitude.amplitude_flutter-pngs-23 /workspace/project/index app/build/amplitude_flutter/generated/res/pngs/release
+com.amplitude.amplitude_flutter-resValues-24 /workspace/project/index app/build/amplitude_flutter/generated/res/resValues/release
+com.amplitude.amplitude_flutter-mergeReleaseResources-25 /workspace/project/index app/build/amplitude_flutter/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.amplitude.amplitude_flutter-mergeReleaseResources-26 /workspace/project/index app/build/amplitude_flutter/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.amplitude.amplitude_flutter-release-27 /workspace/project/index app/build/amplitude_flutter/intermediates/merged_res/release/mergeReleaseResources

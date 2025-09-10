@@ -1,0 +1,232 @@
+import "dart:async";
+import "dart:io";
+
+import "package:flutter/material.dart";
+import "package:flutter/services.dart";
+import "package:flutter_bloc/flutter_bloc.dart";
+import "package:index/bloc/app_bloc.dart";
+import "package:index/bloc/app_event.dart";
+import "package:index/bloc/app_state.dart";
+import "package:index/components/unified_player.dart";
+import "package:index/components/snack_bar.dart";
+import "package:index/models/media_stream.dart";
+import "package:index/models/movie.dart";
+import "package:index/models/tv_show.dart";
+import "package:index/screens/base_screen.dart";
+import "package:index/services/recently_watched_service.dart";
+import "package:index/enums/media_type.dart";
+import "package:wakelock_plus/wakelock_plus.dart";
+
+class PlayerScreen extends BaseScreen {
+  const PlayerScreen({
+    super.key,
+    required this.tmdbId,
+    this.seasonId,
+    this.episodeId,
+    required this.title,
+    this.subtitle,
+    required this.stream,
+    required this.mediaType,
+  }) : assert(mediaType != MediaType.tvShows || (seasonId != null && episodeId != null),
+  "seasonId and episodeId must be provided when mediaType is tvShows"
+  );
+
+  final int tmdbId;
+  final int? seasonId;
+  final int? episodeId;
+  final String title;
+  final String? subtitle;
+  final MediaStream stream;
+  final MediaType mediaType;
+
+  @override
+  BaseScreenState<PlayerScreen> createState() => _PlayerScreenState();
+}
+
+class _PlayerScreenState extends BaseScreenState<PlayerScreen> {
+  final RecentlyWatchedService _recentlyWatchedService = RecentlyWatchedService();
+  List<File>? _subtitleFiles;
+
+  void _updateRecentlyWatched(int progressSeconds) {
+    try {
+      if (widget.mediaType == MediaType.movies) {
+        // Create a temporary movie object
+        final movie = Movie(
+          id: widget.tmdbId,
+          title: widget.title,
+          overview: '',
+          posterPath: '',
+          backdropPath: '',
+          releaseDate: DateTime.now().toIso8601String(),
+          voteAverage: 0.0,
+          voteCount: 0,
+          genreIds: [],
+          adult: false,
+          originalLanguage: 'en',
+          originalTitle: widget.title,
+          popularity: 0.0,
+          video: false,
+          duration: 0,
+        );
+        
+        context.read<AppBloc>().add(
+          UpdateMovieProgress(
+            widget.tmdbId,
+            movie,
+            progressSeconds,
+            0 // Duration not available from stream,
+          ),
+        );
+      } else {
+        // Create a temporary tvShow object
+        final tvShow = TvShow(
+          id: widget.tmdbId,
+          name: widget.title,
+          overview: '',
+          posterPath: '',
+          backdropPath: '',
+          firstAirDate: DateTime.now().toIso8601String(),
+          voteAverage: 0.0,
+          voteCount: 0,
+          genreIds: [],
+          adult: false,
+          originalLanguage: 'en',
+          originalName: widget.title,
+          popularity: 0.0,
+        );
+        
+        context.read<AppBloc>().add(
+          UpdateEpisodeProgress(
+            widget.tmdbId,
+            tvShow,
+            widget.seasonId!,
+            widget.episodeId!,
+            progressSeconds,
+            0 // Duration not available from stream,
+          ),
+        );
+      }
+    } catch (_) {}
+  }
+
+  Future<void> _forceLandscape() async {
+    await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
+      DeviceOrientation.landscapeRight,
+      DeviceOrientation.landscapeLeft,
+    ]);
+    await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  }
+
+  Future<void> _forcePortrait() async {
+    await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
+      DeviceOrientation.portraitUp,
+    ]);
+    await SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual,
+      overlays: SystemUiOverlay.values,
+    );
+  }
+
+  void _onProgress(Duration progress, Duration total) {
+    if (total.inSeconds > 0) {
+      final int progressSeconds = progress.inSeconds;
+      if (progressSeconds > 0) {
+        _updateRecentlyWatched(progressSeconds);
+      }
+    }
+  }
+
+  //ignore: avoid_annotating_with_dynamic
+  void _onError(dynamic error) {
+    logger.e("Playback error", error: error);
+    // Don't automatically exit on error - let user decide
+    // Show error message instead
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('خطأ في التشغيل: ${error.toString()}'),
+          duration: const Duration(seconds: 3),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<void> _saveThenGoBack(int progressSeconds) async {
+    if (mounted) {
+      _updateRecentlyWatched(progressSeconds);
+      Navigator.pop(context);
+    }
+  }
+
+  @override
+  String get screenName => "Semo Player - ${widget.tmdbId}";
+
+  @override
+  Future<void> initializeScreen() async {
+    await WakelockPlus.enable();
+    await _forceLandscape();
+  }
+
+  @override
+  void handleDispose() {
+    _forcePortrait();
+    WakelockPlus.disable();
+  }
+
+  @override
+  Widget buildContent(BuildContext context) => BlocConsumer<AppBloc, AppState>(
+    listener: (BuildContext context, AppState state) {
+      if (mounted) {
+        if (widget.mediaType == MediaType.movies) {
+          setState(() => _subtitleFiles = state.movieSubtitles?["${widget.tmdbId}"]);
+        } else {
+          setState(() => _subtitleFiles = state.episodeSubtitles?["${widget.episodeId}"]);
+        }
+      }
+
+      if (state.error != null) {
+        showSnackBar(context, state.error!);
+        context.read<AppBloc>().add(ClearError());
+      }
+    },
+    builder: (BuildContext context, AppState state) {
+      int progressSeconds;
+
+      if (widget.mediaType == MediaType.movies) {
+        progressSeconds = _recentlyWatchedService.getMovieProgressWithState(widget.tmdbId, state.recentlyWatched);
+      } else {
+        progressSeconds = _recentlyWatchedService.getEpisodeProgressWithState(
+          widget.tmdbId,
+          widget.seasonId!,
+          widget.episodeId!,
+          state.recentlyWatched,
+        );
+      }
+
+      if (widget.mediaType == MediaType.movies) {
+        _subtitleFiles = state.movieSubtitles?["${widget.tmdbId}"];
+      } else {
+        _subtitleFiles = state.episodeSubtitles?["${widget.episodeId}"];
+      }
+
+      return Scaffold(
+        body: UnifiedPlayer(
+          stream: widget.stream,
+          title: widget.title,
+          subtitle: widget.subtitle,
+          subtitleFiles: _subtitleFiles,
+          initialProgress: progressSeconds,
+          tmdbId: widget.tmdbId,
+          seasonId: widget.seasonId,
+          episodeId: widget.episodeId,
+          mediaType: widget.mediaType,
+          onProgress: _onProgress,
+          onPlaybackComplete: _saveThenGoBack,
+          onBack: _saveThenGoBack,
+          onError: _onError,
+        ),
+      );
+    },
+  );
+}

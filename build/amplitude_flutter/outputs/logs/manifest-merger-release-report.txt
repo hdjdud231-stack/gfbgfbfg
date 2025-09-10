@@ -1,0 +1,21 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml:2:3-44
+		INJECTED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml:3:3-64
+	android:name
+		ADDED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml:3:20-62
+uses-sdk
+INJECTED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml
+INJECTED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /root/.pub-cache/hosted/pub.dev/amplitude_flutter-3.16.7/android/src/main/AndroidManifest.xml

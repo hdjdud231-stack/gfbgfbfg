@@ -1,0 +1,82 @@
+name: index
+description: "A VOD streaming application"
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  archive: ^3.6.1
+  audio_video_progress_bar: ^2.0.3
+  cached_network_image: ^3.4.1
+  carousel_slider: ^5.1.1
+  dio: ^5.9.0
+  envied: ^1.2.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_bloc: ^8.1.6
+  flutter_cache_manager: ^3.4.1
+  flutter_settings_ui: ^3.0.1
+  font_awesome_flutter: 10.7.0
+  google_fonts: ^6.3.0
+
+  html: ^0.15.6
+  infinite_scroll_pagination: ^5.1.0
+  internet_connection_checker_plus: ^2.7.2
+  intl: ^0.19.0
+  logger: ^2.4.0
+  lottie: ^3.1.2
+  package_info_plus: ^8.3.1
+  path: ^1.9.0
+  path_provider: ^2.1.5
+  pretty_dio_logger: ^1.4.0
+  shared_preferences: ^2.5.3
+  smooth_page_indicator: ^1.2.1
+  subtitle_wrapper_package: ^2.2.1
+  # universal_back_gesture: ^2.0.0  # Temporarily disabled due to compatibility issues
+  url_launcher: ^6.2.6
+  wakelock_plus: ^1.3.2
+  video_player: ^2.9.1
+  webview_flutter: ^4.4.2
+  amplitude_flutter: ^3.16.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.13
+  envied_generator: ^1.1.1
+  hive_generator: ^2.0.1
+  flutter_gen_runner: ^5.10.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_logo.png"
+  min_sdk_android: 23
+  remove_alpha_ios: true
+  adaptive_icon_background: "#250604"
+  adaptive_icon_foreground: "assets/images/app_icon_108.png"
+  web:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+    background_color: "#250604"
+    theme_color: "#AB261D"
+
+flutter_native_splash:
+  color: "#250604"
+  android_12:
+    color: "#250604"
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/lottie/

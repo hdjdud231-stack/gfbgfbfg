@@ -1,0 +1,1 @@
+com.amplitude.amplitude_flutter
